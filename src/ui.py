@@ -45,7 +45,7 @@ class SimuladorPrestamoUI:
         self.entry_nominal = tk.Entry(frame_inputs)
         self.entry_nominal.grid(row=0, column=1, sticky="ew", padx=(0, 10))
 
-        tk.Label(frame_inputs, text="Duracion en anios:").grid(
+        tk.Label(frame_inputs, text="Duracion en años:").grid(
             row=1,
             column=0,
             sticky="w",
@@ -253,5 +253,9 @@ class SimuladorPrestamoUI:
         self.root.mainloop()
 
 
-if __name__ == "__main__":
+def main() -> None:
     SimuladorPrestamoUI().ejecutar()
+
+
+if __name__ == "__main__":
+    main()
